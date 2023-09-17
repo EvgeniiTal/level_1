@@ -1,0 +1,58 @@
+$font: "Raleway",
+sans-serif;
+$weight-900: 900;
+$weight-700: 700;
+$weight-500: 500;
+$main-color: #000000;
+$secondary-color: #FFFFFF;
+
+.download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-container {
+    width: 1170px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 115px 0;
+
+    div {
+        h3 {
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: $font;
+            font-weight: $weight-500;
+            font-size: 30px;
+            color: $main-color;
+        }
+        h5 {
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $font;
+            font-weight: $weight-700;
+            font-size: 18px;
+            color: $main-color;
+        }
+    }
+    button {
+        width: 370px;
+        height: 80px;
+        background: #FF4343;
+        border: none;
+        font-family: $font;
+        font-weight: $weight-900;
+        font-size: 24px;
+        color: $secondary-color;
+        text-transform: uppercase;
+    }
+}

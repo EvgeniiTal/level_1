@@ -1,0 +1,53 @@
+
+$font: "Raleway",
+sans-serif;
+$weight-900: 900;
+$weight-400: 400;
+$main-color: #2D3033;
+$secondary-color: #6C7279;
+
+.features {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-container {
+    width: 1170px;
+    height: 715px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 115px 0;
+
+    article {
+        width: 370px;
+        height: 305px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+            width: 370px;
+            height: 72px;
+            line-height: 72px;
+            font-family: $font;
+            font-weight: $weight-900;
+            font-size: 24px;
+            color: $main-color;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            width: 370px;
+            font-family: $font;
+            font-weight: $weight-400;
+            color: $secondary-color;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}

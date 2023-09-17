@@ -1,0 +1,85 @@
+$font: "Raleway", sans-serif;
+$weight-900: 900;
+$weight-400: 400;
+$main-color: #FFFFFF;
+
+.work {
+    width: 100%;
+    height: 680px;
+    display: grid;
+    grid-template-columns: 380px 380px 380px 380px;
+    grid-template-rows: 340px 340px;
+
+    img {
+        width: 379px;
+        height: 340px;
+    }
+
+    div {
+        position: relative;
+        width: 379px;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+
+        .work-title {
+            overflow: hidden;
+        }
+    }
+
+    div:hover::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #FF4343CC;
+        cursor: pointer;
+    }
+
+    div:active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #B90C0CCC;
+        cursor: pointer;
+    }
+
+}
+
+div:hover .work-title {
+    overflow: visible;
+    z-index: 1;
+
+    h4 {
+        position: absolute;
+        top: 110px;
+        width: 379px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-family: $font;
+        font-weight: $weight-900;
+        font-size: 24px;
+        color: $main-color;
+        text-transform: uppercase;
+
+    }
+
+    h5 {
+        position: absolute;
+        top: 190px;
+        width: 379px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-family: $font;
+        font-weight: $weight-400;
+        font-size: 18px;
+        color: $main-color;
+    }
+}

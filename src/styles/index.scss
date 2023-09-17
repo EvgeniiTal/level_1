@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@import url('./features.scss');
+@import url('./work.scss');
+@import url('./team.scss');
+@import url('./testimonials.scss');
+@import url('./download.scss');

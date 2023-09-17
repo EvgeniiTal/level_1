@@ -1,0 +1,62 @@
+$font: "Raleway",
+sans-serif;
+$weight-900: 900;
+$weight-400: 400;
+$weight-700: 700;
+$main-color: #2D3033;
+$secondary-color: #6C7279;
+$third-color: #FF4343;
+
+.team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-container {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 115px 0;
+    article {
+        width: 270px;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+            width: 270px;
+            height: 270px;
+        }
+        .social-icon {
+            width: 40px;
+            height: 40px;
+        }
+        h4 {
+            height: 30px;
+            line-height: 30px;
+            font-family: $font;
+            font-weight: $weight-700;
+            font-size: 24px;
+            color: $main-color;
+            text-transform: capitalize;
+        }
+        h5 {
+            height: 20px;
+            line-height: 20px;
+            font-family: $font;
+            font-weight: $weight-400;
+            font-size: 18px;
+            color: $third-color;
+            text-transform: uppercase;
+        }
+        .subscription {
+            height: 170px;
+            font-family: $font;
+            font-weight: $weight-400;
+            font-size: 18px;
+            color: $secondary-color;
+            text-transform: none;
+        }
+    }
+}
