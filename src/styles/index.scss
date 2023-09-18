@@ -5,9 +5,10 @@
     box-sizing: border-box;
     outline: none;
 }
-
+@import url('./header.scss');
 @import url('./features.scss');
 @import url('./work.scss');
 @import url('./team.scss');
 @import url('./testimonials.scss');
 @import url('./download.scss');
+@import url('./footer.scss');

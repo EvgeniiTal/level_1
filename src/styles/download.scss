@@ -55,4 +55,12 @@ $secondary-color: #FFFFFF;
         color: $secondary-color;
         text-transform: uppercase;
     }
+    button:hover {
+        cursor: pointer;
+        background: #E71414;
+    }
+    button:active {
+        background: #FF4343;
+        box-shadow: 4px 4px 30px #FF4343;
+    }
 }
