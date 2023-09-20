@@ -13,25 +13,33 @@ $third-color: #FF4343;
     justify-content: center;
     align-items: center;
 }
+
 .team-container {
     width: 1170px;
     display: flex;
     justify-content: space-between;
     margin: 115px 0;
+
     article {
         width: 270px;
         height: 620px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         img {
             width: 270px;
             height: 270px;
         }
+        .mobile-img {
+            display: none;
+        }
+
         .social-icon {
             width: 40px;
             height: 40px;
         }
+
         h4 {
             height: 30px;
             line-height: 30px;
@@ -41,6 +49,7 @@ $third-color: #FF4343;
             color: $main-color;
             text-transform: capitalize;
         }
+
         h5 {
             height: 20px;
             line-height: 20px;
@@ -50,6 +59,7 @@ $third-color: #FF4343;
             color: $third-color;
             text-transform: uppercase;
         }
+
         .subscription {
             height: 170px;
             font-family: $font;
@@ -57,6 +67,78 @@ $third-color: #FF4343;
             font-size: 18px;
             color: $secondary-color;
             text-transform: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .team-container {
+        width: 985px;
+        height: 2250px;
+        margin: 80px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        article {
+            width: 230px;
+            height: 520px;
+
+            img {
+                width: 230px;
+                height: 230px;
+            }
+
+            .social-icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            h4 {
+                height: 25px;
+                line-height: 25px;
+                font-size: 18px;
+            }
+
+            h5 {
+                height: 15px;
+                line-height: 15px;
+                font-size: 14px;
+            }
+
+            .subscription {
+                height: 130px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .team-container {
+        width: 280px;
+        margin: 40px 0;
+
+        article {
+            width: 280px;
+
+            img {
+            display: none;
+            }
+            .mobile-img {
+                width: 280px;
+                display: block;
+            }
+
+            .social-icon {
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+            }
+
+            .subscription {
+                height: 95px;
+            }
         }
     }
 }

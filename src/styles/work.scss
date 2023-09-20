@@ -1,4 +1,5 @@
-$font: "Raleway", sans-serif;
+$font: "Raleway",
+sans-serif;
 $weight-900: 900;
 $weight-400: 400;
 $main-color: #FFFFFF;
@@ -81,5 +82,78 @@ div:hover .work-title {
         font-weight: $weight-400;
         font-size: 18px;
         color: $main-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .work {
+        height: 460px;
+        grid-template-columns: 255px 255px 255px 255px;
+        grid-template-rows: 230px 230px;
+
+        img {
+            width: 255px;
+            height: 230px;
+        }
+
+        div {
+            width: 255px;
+            height: 230px;
+        }
+
+    }
+
+    div:hover .work-title {
+        h4 {
+            top: 75px;
+            width: 255px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+
+        }
+
+        h5 {
+            top: 130px;
+            width: 255px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .work {
+        height: 580px;
+        grid-template-columns: 160px 160px;
+        grid-template-rows: 145px 145px 145px 145px;
+
+        img {
+            width: 160px;
+            height: 145px;
+        }
+
+        div {
+            width: 160px;
+            height: 145px;
+        }
+
+    }
+
+    div:hover .work-title {
+        h4 {
+            top: 45px;
+            width: 160px;
+            height: 25px;
+            line-height: 25px;
+
+        }
+
+        h5 {
+            top: 75px;
+            width: 160px;
+        }
     }
 }

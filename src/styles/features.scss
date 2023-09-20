@@ -1,4 +1,3 @@
-
 $font: "Raleway",
 sans-serif;
 $weight-900: 900;
@@ -12,6 +11,7 @@ $secondary-color: #6C7279;
     justify-content: center;
     align-items: center;
 }
+
 .features-container {
     width: 1170px;
     height: 715px;
@@ -42,7 +42,7 @@ $secondary-color: #6C7279;
         }
 
         h5 {
-            width: 370px;
+            height: 85px;
             font-family: $font;
             font-weight: $weight-400;
             color: $secondary-color;
@@ -50,4 +50,60 @@ $secondary-color: #6C7279;
             text-align: center;
         }
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .features-container {
+        width: 985px;
+        height: 520px;
+        margin: 80px 0;
+        article {
+            width: 315px;
+            height: 240px;
+            img {
+                width: 85px;
+                height: 85px;
+            }
+            h4 {
+                height: 60px;
+                line-height: 60px;
+                font-size: 18px;
+            }
+            h5 {
+                height: 65px;
+                font-size: 14px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .features-container {
+        width: 280px;
+        height: 1540px;
+        margin: 40px 0;
+
+        article {
+            width: 280px;
+            height: 220px;
+
+            img {
+                width: 75px;
+                height: 75px;
+            }
+
+            h4 {
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+            }
+
+            h5 {
+                height: 80px;
+                font-size: 14px;
+            }
+        }
+    }            
 }
