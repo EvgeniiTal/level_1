@@ -31,6 +31,7 @@ $third-color: #FF4343;
             width: 270px;
             height: 270px;
         }
+
         .mobile-img {
             display: none;
         }
@@ -77,7 +78,7 @@ $third-color: #FF4343;
         height: 2250px;
         margin: 80px 0;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: space-between;
 
         article {
@@ -118,13 +119,15 @@ $third-color: #FF4343;
     .team-container {
         width: 280px;
         margin: 40px 0;
+        flex-direction: column;
 
         article {
             width: 280px;
 
             img {
-            display: none;
+                display: none;
             }
+
             .mobile-img {
                 width: 280px;
                 display: block;
